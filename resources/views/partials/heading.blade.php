@@ -1,0 +1,1 @@
+<div class="col-md-9 col-sm-8 col-xs-4">{{$heading1}} <span>{{$heading2}}</span></div>

@@ -1,0 +1,80 @@
+@extends('layouts.master')
+@section('title', 'AWS')
+@section('content') 
+<div class="container">
+    <div class="app-content main-content">
+        <div class="side-app">        
+            <!--Page header-->
+            <div class="page-header d-xl-flex d-block">
+                <div class="page-leftheader">
+                    <h4 class="page-title">Event</h4>
+                </div>
+                <div class="page-rightheader ml-md-auto">
+                    <div class="align-items-end flex-wrap my-auto right-content breadcrumb-right">
+                        <div class="btn-list">
+                            <a href="#" class="btn btn-success mr-3">Active List</a>
+                            <a href="/events/dlist" class="btn btn-primary mr-3">Deactive List</a>
+                            <a href="/events/create" class="btn btn-primary mr-3">Add Event</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Page header-->
+
+            <!-- Row -->
+            <div class="row">
+                <div class="col-xl-12 col-md-12 col-lg-12">
+                    <div class="card">
+                        <div class="card-header  border-0">
+                            <h4 class="card-title">Deactive Event</h4>
+                        </div>
+                        <div class="card-body">
+                            @if(isset($events))
+                                @if(count($events) >= 1)
+                                    <div class="table-responsive">
+                                        <table class="table  table-vcenter text-nowrap table-bordered border-top border-bottom" id="hr-table">
+                                            <thead>
+                                                <tr>
+                                                    <th class="border-bottom-0" width="10%">No</th>
+                                                    <th class="border-bottom-0">Title</th>
+                                                    <th class="border-bottom-0"  width="10%">Event Date</th>
+                                                    <th class="border-bottom-0"  width="10%">Updated At</th>
+                                                    <th class="border-bottom-0"  width="10%">Updated By</th>
+                                                    <th class="border-bottom-0">Actions<?php $i=1; ?></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach($events as $event)
+                                                    <tr>
+                                                        <td>{{$i++}}</td>
+                                                        <td><a href="/events/{{$event->id}}">{{$event->title}}</a></td>
+                                                        <td>{{$event->forDate}}</td>
+                                                        <td>{{date('d-m-Y h:i A', strtotime($event->updated_at))}}</td>
+                                                        <td>{{$event->updated_by}}</td>
+                                                        <td>
+                                                            <a href="/events/{{$event->id}}/edit" class="btn btn-primary btn-icon btn-sm">
+                                                                <i class="fa fa-edit" style="font-size:20px;" data-toggle="tooltip" data-original-title="Edit"></i>
+                                                            </a>
+                                                            <a href="/events/{{$event->id}}/activate" class="btn btn-danger btn-icon btn-sm" onclick="return confirm('Are you sure?')">
+                                                                <i class="fa fa-times-circle-o" style="font-size:20px;" aria-hidden="true"data-toggle="tooltip" data-original-title="Activate"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                @endforeach                                        
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                @else
+                                    <h4 style="color:red;">Not Found Deactivate Records.</h4>
+                                @endif
+                            @endif
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Row-->
+        </div>
+    </div><!-- end app-content-->
+</div>
+@endsection

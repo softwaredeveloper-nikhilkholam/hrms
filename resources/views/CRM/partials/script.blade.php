@@ -1,0 +1,21 @@
+<script src="{{asset('/CRM/js/jquery-3.7.1.min.js')}}" type="5ba81076a805a63b1cc8a86b-text/javascript"></script>
+<script src="{{asset('/CRM/js/bootstrap.bundle.min.js')}}" type="5ba81076a805a63b1cc8a86b-text/javascript"></script>
+<script src="{{asset('/CRM/js/feather.min.js')}}" type="5ba81076a805a63b1cc8a86b-text/javascript"></script>
+<script src="{{asset('/CRM/js/jquery.slimscroll.min.js')}}" type="5ba81076a805a63b1cc8a86b-text/javascript"></script>
+<script src="{{asset('/CRM/js/jquery.dataTables.min.js')}}" type="5ba81076a805a63b1cc8a86b-text/javascript"></script>
+<script src="{{asset('/CRM/js/dataTables.bootstrap5.min.js')}}" type="5ba81076a805a63b1cc8a86b-text/javascript"></script>
+<script src="{{asset('/CRM/js/moment.min.js')}}" type="5ba81076a805a63b1cc8a86b-text/javascript"></script>
+<script src="{{asset('/CRM/plugins/daterangepicker/daterangepicker.js')}}" type="5ba81076a805a63b1cc8a86b-text/javascript"></script>
+<script src="{{asset('/CRM/js/bootstrap-datetimepicker.min.js')}}" type="5ba81076a805a63b1cc8a86b-text/javascript"></script>
+<script src="{{asset('/CRM/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js')}}" type="5ba81076a805a63b1cc8a86b-text/javascript"></script>
+<script src="{{asset('/CRM/plugins/apexchart/apexcharts.min.js')}}" type="5ba81076a805a63b1cc8a86b-text/javascript"></script>
+<script src="{{asset('/CRM/plugins/apexchart/chart-data.js')}}" type="5ba81076a805a63b1cc8a86b-text/javascript"></script>
+<script src="{{asset('/CRM/plugins/peity/jquery.peity.min.js')}}" type="5ba81076a805a63b1cc8a86b-text/javascript"></script>
+<script src="{{asset('/CRM/plugins/peity/chart-data.js')}}" type="5ba81076a805a63b1cc8a86b-text/javascript"></script>
+<script src="{{asset('/CRM/plugins/select2/js/select2.min.js')}}" type="5ba81076a805a63b1cc8a86b-text/javascript"></script>
+<script src="{{asset('/CRM/js/jsonscript.js')}}" type="5ba81076a805a63b1cc8a86b-text/javascript"></script>
+<script src="{{asset('/CRM/plugins/%40simonwep/pickr/pickr.es5.min.js')}}" type="5ba81076a805a63b1cc8a86b-text/javascript"></script>
+<script src="{{asset('/CRM/js/theme-colorpicker.js')}}" type="5ba81076a805a63b1cc8a86b-text/javascript"></script>
+<script src="{{asset('/CRM/js/script.js')}}" type="5ba81076a805a63b1cc8a86b-text/javascript"></script>
+<script  type="5ba81076a805a63b1cc8a86b-text/javascript" src="{{asset('/js/custom.js')}}"></script>
+<script src="{{asset('/CRM/js/rocket-loader.min.js')}}" data-cf-settings="5ba81076a805a63b1cc8a86b-|49" defer></script>
